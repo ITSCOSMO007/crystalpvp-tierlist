@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minecraft Crystal PvP Tier List – Top 200 Asia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/bYg0u0u.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 4px solid #00ffcc;
+    }
+
+    header img {
+      height: 60px;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      display: inline-block;
+      font-size: 2.4em;
+      vertical-align: middle;
+      color: #00ffcc;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #00e6e6;
+      text-align: center;
+    }
+
+    .search-filter {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .search-filter input,
+    .search-filter select {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #2a2a2a;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #444;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    tr.highlight {
+      background-color: #00cc66;
+      font-weight: bold;
+    }
+
+    .rank-number {
+      color: #00ffff;
+    }
+
+    .tier-header {
+      font-size: 1.3em;
+      margin-top: 40px;
+      color: #ffa500;
+      border-bottom: 2px solid #555;
+      padding-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      color: #ccc;
+      font-size: 0.8em;
+      margin-top: 40px;
+    }
+
+    .player-row {
+      display: table-row;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6e/End_Crystal.png" alt="Crystal PvP Logo">
+    <h1>Crystal PvP TierList – Asia Top 200</h1>
+  </header>
+
+  <div class="container">
+    <h2>Top 200 Crystal PvP Players in Asia – July 2025</h2>
+
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search player..." oninput="filterTable()" />
+      <select id="tierSelect" onchange="filterTable()">
+        <option value="all">All Tiers</option>
+        <option value="s">S Tier</option>
+        <option value="a">A Tier</option>
+        <option value="b">B Tier</option>
+      </select>
+    </div>
+
+    <div class="tier-header">S TIER</div>
+    <table>
+      <thead><tr><th>#</th><th>Username</th><th>Country</th><th>ELO</th></tr></thead>
+      <tbody id="s-tier">
+        <tr class="player-row" data-tier="s"><td class="rank-number">1</td><td>xBlitzZz</td><td>South Korea</td><td>9021</td></tr>
+        <tr class="player-row" data-tier="s"><td class="rank-number">2</td><td>EndGodZ</td><td>China</td><td>8990</td></tr>
+        <tr class="player-row" data-tier="s"><td class="rank-number">3</td><td>ShatterFox</td><td>Japan</td><td>8912</td></tr>
+      </tbody>
+    </table>
+
+    <div class="tier-header">A TIER</div>
+    <table>
+      <thead><tr><th>#</th><th>Username</th><th>Country</th><th>ELO</th></tr></thead>
+      <tbody id="a-tier">
+        <tr class="player-row" data-tier="a"><td class="rank-number">45</td><td>CtrlClicker</td><td>India</td><td>8310</td></tr>
+        <tr class="player-row" data-tier="a"><td class="rank-number">46</td><td>NukerZ</td><td>Malaysia</td><td>8299</td></tr>
+      </tbody>
+    </table>
+
+    <div class="tier-header">B TIER</div>
+    <table>
+      <thead><tr><th>#</th><th>Username</th><th>Country</th><th>ELO</th></tr></thead>
+      <tbody id="b-tier">
+        <tr class="player-row" data-tier="b"><td class="rank-number">196</td><td>SwiftAnchor</td><td>Japan</td><td>7430</td></tr>
+        <tr class="player-row" data-tier="b"><td>197</td><td>xxVoidLord</td><td>Singapore</td><td>7422</td></tr>
+        <tr class="player-row" data-tier="b"><td>198</td><td>CrystlFreak</td><td>Thailand</td><td>7411</td></tr>
+        <tr class="player-row highlight" data-tier="b"><td>199</td><td>ITS_COSMO_</td><td>India</td><td>7399</td></tr>
+        <tr class="player-row" data-tier="b"><td>200</td><td>PingSpammer</td><td>China</td><td>7395</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top: 20px; color: #aaa; font-size: 0.9em;">
+      Rankings updated weekly using data from Minemen Club, PvPLegacy, CubedCraft, and Crystal SMPs.
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 TierList.gg • Minecraft Crystal PvP Rankings • Not affiliated with Mojang</p>
+  </footer>
+
+  <script>
+    function filterTable() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const tier = document.getElementById('tierSelect').value;
+
+      const allRows = document.querySelectorAll('.player-row');
+
+      allRows.forEach(row => {
+        const name = row.cells[1].innerText.toLowerCase();
+        const rowTier = row.getAttribute('data-tier');
+
+        const matchesSearch = name.includes(search);
+        const matchesTier = tier === 'all' || tier === rowTier;
+
+        if (matchesSearch && matchesTier) {
+          row.classList.remove('hidden');
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
